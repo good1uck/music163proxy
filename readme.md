@@ -15,6 +15,7 @@
 ### macOS 用户
 - 下载 macOS 版本的可执行文件,直接运行即可。 https://github.com/good1uck/music163proxy/releases/download/v1.0/app.zip
 - 作者尚未加入苹果开发者计划。若提示APPLE无法检测程序是否存在恶意，可忽略。
+- [![930d222ac568a74de971f9681d4c26e9.md.jpeg](https://jpg.sevencdn.com/ts3.jpgcom.com/2023/06/02/930d222ac568a74de971f9681d4c26e9.md.jpeg)](https://jpg.im.sb/image/3nCt)
 
 ### Windows 用户
 - 目前只提供源代码，如需可执行文件，请在 "Issue" 页面提出请求。
