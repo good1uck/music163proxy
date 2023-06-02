@@ -16,7 +16,13 @@ def generate_user_agent():
 def get_fastest_proxy():
     # 发送网络请求并获取网页内容
     url = 'https://proxy.ip3366.net/free/'
-    req = urllib.request.Request(url, headers={'User-Agent': generate_user_agent()})
+    headers = {
+        'User-Agent': generate_user_agent(),
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.5',
+        'Referer': 'https://www.google.com/'
+    }
+    req = urllib.request.Request(url, headers=headers)
     response = urllib.request.urlopen(req)
     html_content = response.read()
 

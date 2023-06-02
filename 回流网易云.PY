@@ -6,18 +6,33 @@ import tkinter as tk
 from tkinter import ttk
 import winreg
 
+import random
+
 def generate_user_agent():
-    # 生成随机的 User-Agent
-    major_version = random.randint(60, 91)
-    minor_version = random.randint(0, 9999)
-    build_version = random.randint(0, 9999)
-    user_agent = f"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/{major_version}.0.{minor_version}.{build_version} Safari/537.36"
+    # 随机选择常见浏览器
+    browsers = [
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:89.0) Gecko/20100101 Firefox/89.0",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15"
+    ]
+    
+    # 随机选择一个浏览器 User-Agent
+    user_agent = random.choice(browsers)
     return user_agent
+
 
 def get_fastest_proxy():
     # 发送网络请求并获取网页内容
     url = 'https://proxy.ip3366.net/free/'
-    req = urllib.request.Request(url, headers={'User-Agent': generate_user_agent()})
+    headers = {
+        'User-Agent': generate_user_agent(),
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.5',
+        'Referer': 'https://www.google.com/'
+    }
+    req = urllib.request.Request(url, headers=headers)
     response = urllib.request.urlopen(req)
     html_content = response.read()
 
@@ -40,10 +55,10 @@ def get_fastest_proxy():
         columns = row.find_all('td')
         data = [column.text.strip() for column in columns]
         proxy = dict(zip(headers, data))
-        
+
         # 提取响应速度并转换为浮点数
         response_speed = float(proxy['响应速度'][:-2])
-        
+
         # 更新最快响应速度和对应的地址、位置
         if response_speed < fastest_speed:
             fastest_speed = response_speed
