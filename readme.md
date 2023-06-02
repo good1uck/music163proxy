@@ -2,7 +2,7 @@
 
 这是一个用于免费回流的 Python 脚本，旨在为国外用户提供免费使用国内代理的服务。通过设置代理服务器，可以解除网易云音乐等应用的地区版权限制，让用户能够快乐畅听歌曲。
 
-## 依赖项
+## 源码依赖项
 - Python 3.x
 - `urllib.request`
 - `BeautifulSoup`
@@ -14,6 +14,7 @@
 
 ### macOS 用户
 - 下载 macOS 版本的可执行文件,直接运行即可。 https://github.com/good1uck/music163proxy/releases/download/v1.0/app.zip
+- 若提示APPLE无法检测程序是否存在恶意，可忽略并打开，原因是作者尚未加入苹果开发者计划。
 
 ### Windows 用户
 - 目前只提供源代码，如需可执行文件，请在 "Issue" 页面提出请求。
