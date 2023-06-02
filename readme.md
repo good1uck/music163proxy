@@ -13,11 +13,12 @@
 1. 确保你已安装所有必需的依赖项。
 
 ### macOS 用户
-- 下载 macOS 版本的可执行文件 `your_executable_file`。
+- 下载 macOS 版本的可执行文件,直接运行即可。 https://github.com/good1uck/music163proxy/releases/download/v1.0/app.zip
 
 ### Windows 用户
-- 目前只提供源代码，如需可执行文件，请在 "Issue" 页面提出请求，我们将尽快提供可执行文件。
-- 你也可以自行寻找其他运行方法，例如使用 PyInstaller 将脚本打包为可执行文件。
+- 目前只提供源代码，如需可执行文件，请在 "Issue" 页面提出请求。
+- 你也可以自行寻找其他运行方法，例如使用 PyInstaller 将脚本打包为可执行文件，或者用python运行。
+
 
 脚本将打开一个 GUI 窗口，具有以下功能：
 - 它显示找到的最快代理服务器的地址。
