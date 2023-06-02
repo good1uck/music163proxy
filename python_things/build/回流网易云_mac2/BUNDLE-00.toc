@@ -1,3 +1,0 @@
-([('回流网易云_mac2',
-   '/Users/linziqiao/Desktop/python_things/dist/回流网易云_mac2',
-   'EXECUTABLE')],)

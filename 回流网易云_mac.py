@@ -64,7 +64,7 @@ def set_system_proxy(proxy_address):
         
         # 设置系统代理
         subprocess.run(["networksetup", "-setwebproxy", "Wi-Fi", ip, port])
-        subprocess.run(["networksetup", "-setsecurewebproxy", "Wi-Fi", ip, port])
+        # subprocess.run(["networksetup", "-setsecurewebproxy", "Wi-Fi", ip, port])
         status_text.set(f"System proxy set to: {proxy_address}")
     except Exception as e:
         status_text.set("Failed to set system proxy: " + str(e))
@@ -73,7 +73,7 @@ def clear_system_proxy():
     try:
         # 清除系统代理
         subprocess.run(["networksetup", "-setwebproxystate", "Wi-Fi", "off"])
-        subprocess.run(["networksetup", "-setsecurewebproxystate", "Wi-Fi", "off"])
+        # subprocess.run(["networksetup", "-setsecurewebproxystate", "Wi-Fi", "off"])
         status_text.set("System proxy cleared")
     except Exception as e:
         status_text.set("Failed to clear system proxy: " + str(e))
