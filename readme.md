@@ -18,8 +18,7 @@
 - [![930d222ac568a74de971f9681d4c26e9.md.jpeg](https://jpg.sevencdn.com/ts3.jpgcom.com/2023/06/02/930d222ac568a74de971f9681d4c26e9.md.jpeg)](https://jpg.im.sb/image/3nCt)
 
 ### Windows 用户
-- 目前只提供源代码，如需可执行文件，请在 "Issue" 页面提出请求。
-- 你也可以自行寻找其他运行方法，例如使用 PyInstaller 将脚本打包为可执行文件，或者用python运行。
+- 同上
 
 
 脚本将打开一个 GUI 窗口，具有以下功能：
