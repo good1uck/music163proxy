@@ -18,7 +18,7 @@
 - [![930d222ac568a74de971f9681d4c26e9.md.jpeg](https://jpg.sevencdn.com/ts3.jpgcom.com/2023/06/02/930d222ac568a74de971f9681d4c26e9.md.jpeg)](https://jpg.im.sb/image/3nCt)
 
 ### Windows 用户
-- 同上
+- 下载windows版本即可。
 
 
 脚本将打开一个 GUI 窗口，具有以下功能：
