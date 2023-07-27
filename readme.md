@@ -19,6 +19,7 @@
 
 ### Windows 用户
 - 下载windows版本即可。
+- https://github.com/good1uck/music163proxy/releases/download/v1.1/_windows.zip
 
 
 脚本将打开一个 GUI 窗口，具有以下功能：
